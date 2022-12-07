@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond ${REQUEST_FILENAME} !-f
+
+RewriteRule ^trello$ controller/TrelloTaskController.php [L]
+RewriteRule ^hooks$ controller/WebHookController.php [L]
